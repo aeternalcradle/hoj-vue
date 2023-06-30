@@ -70,10 +70,13 @@ export default {
       const selectedOption = this.lgoptions.find(option => option.value === this.lgvalue);
       console.log(selectedOption.value); // 获取选择的value值
       console.log(selectedOption.id); // 获取选择的id值
+      this.id=selectedOption.id;
+      console.log(this.id);
     }
   },
   data() {
     return {
+      id: 63,
       currentDate: new Date(),
       lgoptions: [
         {
